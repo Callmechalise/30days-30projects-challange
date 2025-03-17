@@ -72,7 +72,7 @@ python calculator.py
 - If you try to divide by zero, a `ZeroDivisionError` message will be displayed.
 - Any other errors will show a generic error message.
 
-###Day1
+**Day1**
 
 ![Day1:](Day1.png)
 

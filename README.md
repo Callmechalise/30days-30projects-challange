@@ -16,7 +16,7 @@ This repository contains 30 Python projects that will help you enhance your prog
 | 8   | Number Guessing Game          | random                                          |
 | 9   | Basic Web Scraper             | requests, BeautifulSoup                         |
 | 10  | Rock-Paper-Scissors           | random                                          |
-| 11  | GUI Calculator                | tkinter                                         |
+| 11  | equation solver                | z3solver                                         |
 | 12  | Text-to-Speech App            | pyttsx3                                         |
 | 13  | Hangman Game                  | random                                          |
 | 14  | PDF Merger                    | PyPDF2                                          |

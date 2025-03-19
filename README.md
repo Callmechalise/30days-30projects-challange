@@ -174,4 +174,5 @@ pip install customtkinter
 - The generated password appears instantly when a button is clicked.  
 
 ---
+**Day3**
 

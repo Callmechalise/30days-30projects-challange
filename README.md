@@ -76,4 +76,99 @@ python calculator.py
 
 ![Day1:](Day1.png)
 
+### **Calculator Project - Day 2**  
+#### **CLI To-Do List App (with File Storage)**  
+This project is a **command-line To-Do List application** that allows users to add, view, and remove tasks. The tasks are stored in a `todo.txt` file so they persist even after the program is closed.  
+
+---
+
+### **Features:**  
+✅ Add new tasks  
+✅ View the current task list  
+✅ Remove completed tasks  
+✅ Save tasks in a `todo.txt` file for persistence  
+
+---
+
+### **Installation:**  
+Ensure you have Python installed. No additional dependencies are required.  
+
+---
+
+### **Usage:**  
+1. **Clone the repository** or download the script.  
+2. **Run the script** using:  
+   ```sh
+   python Day2.py
+   ```
+3. Choose an action from the menu:  
+   - **1** → Add a new task  
+   - **2** → View all tasks  
+   - **3** → Remove a completed task  
+   - **4** → Exit  
+
+---
+
+### **Example:**  
+```sh
+Welcome to the CLI To-Do List App!
+1. Add Task
+2. View Tasks
+3. Remove Task
+4. Exit
+Choose an option: 1
+Enter Task: Buy groceries
+Task added successfully!
+
+Choose an option: 2
+1. Buy groceries
+
+Choose an option: 3
+Enter task number to remove: 1
+Task removed!
+
+Choose an option: 4
+Exiting the app. Your tasks are saved!
+```
+
+---
+
+### **Day 3 - GUI Password Generator**  
+This project is a **password generator with a GUI** built using `customtkinter`. It allows users to generate **weak or strong passwords** based on different character sets.  
+
+---
+
+### **Features:**  
+✅ Generate **weak passwords** (letters + numbers)  
+✅ Generate **strong passwords** (letters + numbers + special characters)  
+✅ Copy passwords to clipboard  
+✅ Clear the password field  
+
+---
+
+### **Installation:**  
+Install the required dependencies:  
+```sh
+pip install customtkinter
+```
+
+---
+
+### **Usage:**  
+1. **Clone the repository** or download the script.  
+2. **Run the script** using:  
+   ```sh
+   python Day3.py
+   ```
+3. Click the **"Weak"** or **"Strong"** button to generate a password.  
+4. Click **"Clear"** to reset the field.  
+
+---
+
+### **Example GUI:**  
+- A **text field** displays the generated password.  
+- Three buttons: **"Weak", "Strong", and "Clear"**.  
+- The generated password appears instantly when a button is clicked.  
+
+---
 

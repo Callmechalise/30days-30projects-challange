@@ -76,7 +76,10 @@ python calculator.py
 
 ![Day1:](Day1.png)
 
-### **Calculator Project - Day 2**  
+
+ 
+
+Day 2**  
 #### **CLI To-Do List App (with File Storage)**  
 This project is a **command-line To-Do List application** that allows users to add, view, and remove tasks. The tasks are stored in a `todo.txt` file so they persist even after the program is closed.  
 

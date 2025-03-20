@@ -176,3 +176,69 @@ pip install customtkinter
 ---
 
 ![Day3:](Day3.png)
+
+🌦️ Weather Data Fetcher (Day 4/30)
+📌 Project Overview
+In this project, I used the OpenWeatherMap API to fetch real-time weather data for a specific city (Lalitpur). The program retrieves weather conditions, temperature, humidity, and the "feels like" temperature and displays the results in a neatly formatted table.
+
+🛠️ Technologies Used
+Python
+requests (for making API calls)
+tabulate (for formatting output)
+🔗 API Used
+OpenWeatherMap API
+
+💻 Code Implementation
+python
+Copy
+Edit
+import requests
+from tabulate import tabulate
+
+# Define city and API key
+city_name = "Lalitpur"
+api_key = "8578b0e1d22b100909c7a832bfa2e0f7"
+
+# Construct API request URL
+base_url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}&units=metric"
+
+# Make API request
+response = requests.get(base_url)
+
+# Check if the request was successful
+if response.status_code == 200:
+    print('Status ok')
+
+    # Extract data from JSON response
+    data = response.json()
+    weather = data['weather'][0]['description']  # e.g., mist
+    temperature = data['main']['temp']
+    feelslike = data['main']['feels_like']
+    humidity = data['main']['humidity']
+
+    # Create table format output
+    mweather = [[humidity, feelslike, weather, temperature]]
+    head = ["Humidity", "Feels Like (°C)", "Weather", "Temperature (°C)"]
+
+    # Print formatted table
+    print(tabulate(mweather, headers=head, tablefmt='grid'))
+else:
+    print("Failed to fetch weather data")
+📊 Output Example
+sql
+Copy
+Edit
++-----------+----------------+---------+----------------+
+| Humidity  | Feels Like (°C)| Weather | Temperature (°C) |
++-----------+----------------+---------+----------------+
+| 87        | 18.5           | Mist    | 19.2           |
++-----------+----------------+---------+----------------+
+🔥 Key Learnings
+✅ Making API requests using requests
+✅ Extracting and parsing JSON data
+✅ Formatting and displaying data in tabular form using tabulate
+
+🚀 Next Steps
+Add error handling for invalid city names
+Allow user input for city selection
+Extend functionality to display more weather details

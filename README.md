@@ -198,7 +198,7 @@ from tabulate import tabulate
 
 # Define city and API key
 city_name = "Lalitpur"
-api_key = "8578b0e1d22b100909c7a832bfa2e0f7"
+api_key = "yourapikey"
 
 # Construct API request URL
 base_url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}&units=metric"
@@ -227,18 +227,18 @@ else:
     print("Failed to fetch weather data")
 ```
 # 📊 Output Example
-+-----------+----------------+---------+----------------+
-| Humidity  | Feels Like (°C)| Weather | Temperature (°C) |
-+-----------+----------------+---------+----------------+
-| 87        | 18.5           | Mist    | 19.2           |
-+-----------+----------------+---------+----------------+
 
-#🔥 Key Learnings
+| Humidity | Feels Like (°C) | Weather | Temperature (°C) |
+|----------|-----------------|---------|------------------|
+| 87       | 18.5            | Mist    | 19.2             |
+
+
+# 🔥 Key Learnings
 ✅ Making API requests using requests
 ✅ Extracting and parsing JSON data
 ✅ Formatting and displaying data in tabular form using tabulate
 
-#🚀 Next Steps
+# 🚀 Next Steps
 Add error handling for invalid city names
 Allow user input for city selection
 Extend functionality to display more weather details

@@ -1,7 +1,7 @@
 import requests
 from tabulate import tabulate
 city_name="Lalitpur"
-api_key="8578b0e1d22b100909c7a832bfa2e0f7"
+api_key="yourapi"
 base_url=f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}&units=metric"
 
 respone=requests.get(base_url)

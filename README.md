@@ -177,21 +177,22 @@ pip install customtkinter
 
 ![Day3:](Day3.png)
 
-🌦️ Weather Data Fetcher (Day 4/30)
-📌 Project Overview
+# 🌦️ Weather Data Fetcher (Day 4/30)
+
+## 📌 Project Overview  
 In this project, I used the OpenWeatherMap API to fetch real-time weather data for a specific city (Lalitpur). The program retrieves weather conditions, temperature, humidity, and the "feels like" temperature and displays the results in a neatly formatted table.
 
-🛠️ Technologies Used
-Python
-requests (for making API calls)
-tabulate (for formatting output)
-🔗 API Used
-OpenWeatherMap API
+## 🛠️ Technologies Used  
+- Python  
+- `requests` (for making API calls)  
+- `tabulate` (for formatting output)
 
-💻 Code Implementation
-python
-Copy
-Edit
+## 🔗 API Used  
+[OpenWeatherMap API](https://openweathermap.org/api)
+
+## 💻 Code Implementation  
+
+```python
 import requests
 from tabulate import tabulate
 
@@ -224,21 +225,20 @@ if response.status_code == 200:
     print(tabulate(mweather, headers=head, tablefmt='grid'))
 else:
     print("Failed to fetch weather data")
-📊 Output Example
-sql
-Copy
-Edit
+```
+# 📊 Output Example
 +-----------+----------------+---------+----------------+
 | Humidity  | Feels Like (°C)| Weather | Temperature (°C) |
 +-----------+----------------+---------+----------------+
 | 87        | 18.5           | Mist    | 19.2           |
 +-----------+----------------+---------+----------------+
-🔥 Key Learnings
+
+#🔥 Key Learnings
 ✅ Making API requests using requests
 ✅ Extracting and parsing JSON data
 ✅ Formatting and displaying data in tabular form using tabulate
 
-🚀 Next Steps
+#🚀 Next Steps
 Add error handling for invalid city names
 Allow user input for city selection
 Extend functionality to display more weather details

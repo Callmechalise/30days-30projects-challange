@@ -247,7 +247,7 @@ Extend functionality to display more weather details
 **Directory Manager CLI**
 A simple Python-based command-line tool to manage directories using os and shutil.<br>
 
-****Features****
+****Features****<br>
 📂 List directories (ls)<br>
 📁 Enter a directory<br>
 🔙 Return to the previous directory<br>
@@ -257,15 +257,15 @@ A simple Python-based command-line tool to manage directories using os and shuti
 🚚 Move a directory<br>
 🔴 Exit the program<br>
 
-**requirements**
+**requirements**<br>
 Python 3.x <br>
 OS module (built-in)<br>
 Shutil module (built-in)<br>
 
-** Error Handling**
-The script includes:
+**Error Handling** <br>
+The script includes:<br>
 
-🚨 Invalid input checks
-🚫 Permission handling
-🔍 File existence verification
-🛠 General exception handling
+🚨 Invalid input checks<br>
+🚫 Permission handling<br>
+🔍 File existence verification<br>
+🛠 General exception handling<br>

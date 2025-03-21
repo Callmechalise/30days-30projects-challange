@@ -243,19 +243,19 @@ Add error handling for invalid city names
 Allow user input for city selection
 Extend functionality to display more weather details
 
-**Day 5 **
+****Day 5****
 # Directory Manager CLI
-A simple Python-based command-line tool to manage directories using os and shutil.
+A simple Python-based command-line tool to manage directories using os and shutil.<br>
 
-**Features**
-📂 List directories (ls)
-📁 Enter a directory
-🔙 Return to the previous directory
-🆕 Create a new directory
-❌ Delete a directory
-📑 Copy a directory
-🚚 Move a directory
-🔴 Exit the program
+****Features****
+📂 List directories (ls)<br>
+📁 Enter a directory<br>
+🔙 Return to the previous directory<br>
+🆕 Create a new directory<br>
+❌ Delete a directory<br>
+📑 Copy a directory<br>
+🚚 Move a directory<br>
+🔴 Exit the program<br>
 
 **requirements**
 Python 3.x

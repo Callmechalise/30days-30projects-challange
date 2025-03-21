@@ -243,8 +243,8 @@ Add error handling for invalid city names
 Allow user input for city selection
 Extend functionality to display more weather details
 
-****Day 5****
-# Directory Manager CLI
+# Day 5
+**Directory Manager CLI**
 A simple Python-based command-line tool to manage directories using os and shutil.<br>
 
 ****Features****
@@ -258,6 +258,14 @@ A simple Python-based command-line tool to manage directories using os and shuti
 🔴 Exit the program<br>
 
 **requirements**
-Python 3.x
-OS module (built-in)
-Shutil module (built-in)
+Python 3.x <br>
+OS module (built-in)<br>
+Shutil module (built-in)<br>
+
+** Error Handling**
+The script includes:
+
+🚨 Invalid input checks
+🚫 Permission handling
+🔍 File existence verification
+🛠 General exception handling

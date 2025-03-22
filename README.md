@@ -243,7 +243,7 @@ Add error handling for invalid city names
 Allow user input for city selection
 Extend functionality to display more weather details
 
-# Day 5
+## Day 5
 **Directory Manager CLI**
 A simple Python-based command-line tool to manage directories using os and shutil.<br>
 
@@ -269,3 +269,45 @@ The script includes:<br>
 🚫 Permission handling<br>
 🔍 File existence verification<br>
 🛠 General exception handling<br>
+
+## Day 6<br>
+**Alarm Clock using Python**<br>
+This is a simple alarm clock application created using Python, customTkinter, and plyer for notifications. The application allows users to set an alarm by entering the hour, minute, and second. When the time is reached, a notification is shown, and an alarm sound is played.<br>
+
+# Features:<br>
+Set hour, minute, and second for the alarm.<br>
+
+Displays a message when the alarm goes off.<br>
+
+Plays a beep sound at the set time.<br>
+
+Shows desktop notification when the alarm rings.<br>
+
+#Requirements:<br>
+Python 3.x<br>
+
+customtkinter: For GUI components.<br>
+
+plyer: For desktop notifications.<br>
+
+winsound: For playing sound.<br>
+
+threading: For running the alarm in the background.<br>
+
+# code:<br>
+```python
+def play_alarm():
+    while True:
+        now = datetime.now().strftime("%H:%M:%S")
+        if timex == now:
+            notification.notify(
+                title='Heyyyy wake-----uppp',
+                message='uth',
+                timeout=8
+            )
+            messagebox.showerror('Error', 'Uth muji uthh!!!!!!!!!!')
+            winsound.Beep(2000, 10000)
+            break
+```
+
+

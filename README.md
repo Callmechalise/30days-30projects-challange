@@ -309,5 +309,8 @@ def play_alarm():
             winsound.Beep(2000, 10000)
             break
 ```
+<br>
+![Day6:](Day6.png)
+<br>
 **🚀 Happy coding**
 

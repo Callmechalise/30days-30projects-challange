@@ -315,5 +315,5 @@ def play_alarm():
 
 <br>
 
-** 🚀 Happy coding **
+🚀 Happy coding 
 

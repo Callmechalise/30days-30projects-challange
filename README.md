@@ -310,7 +310,10 @@ def play_alarm():
             break
 ```
 <br>
+
 ![Day6:](Day6.png)
+
 <br>
-**🚀 Happy coding**
+
+** 🚀 Happy coding **
 

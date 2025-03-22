@@ -283,7 +283,7 @@ Plays a beep sound at the set time.<br>
 
 Shows desktop notification when the alarm rings.<br>
 
-#Requirements:<br>
+# Requirements:<br>
 Python 3.x<br>
 
 customtkinter: For GUI components.<br>

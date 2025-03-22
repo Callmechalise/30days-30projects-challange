@@ -309,5 +309,5 @@ def play_alarm():
             winsound.Beep(2000, 10000)
             break
 ```
-
+**🚀 Happy coding**
 

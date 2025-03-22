@@ -31,7 +31,7 @@ def set_alarm():
                 break
             else:
                 print(now)
-                t.sleep(10)
+                t.sleep(1)
 
     alarm_thread = threading.Thread(target=play_alarm, daemon=True)
     alarm_thread.start()

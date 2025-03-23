@@ -317,7 +317,7 @@ def play_alarm():
 
 🚀 Happy coding 
 
-** Day 6 **<br>
+**Day 6**<br>
 # Tic-Tac-Toe Game in Python<br>
 
 This is a simple two-player Tic-Tac-Toe game implemented in Python with color outputs using `colorama` and sound effects using `pygame`.

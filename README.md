@@ -317,3 +317,100 @@ def play_alarm():
 
 🚀 Happy coding 
 
+** Day 6 **<br>
+# Tic-Tac-Toe Game in Python<br>
+
+This is a simple two-player Tic-Tac-Toe game implemented in Python with color outputs using `colorama` and sound effects using `pygame`.
+<br>
+## Requirements<br>
+- `pygame` library for sound effects.<br>
+- `colorama` for colored text.<br>
+- `z3` for logical parsing (though it seems unused in this code).<br>
+
+## Game Description<br>
+- Player 1 uses 'X' (Green) and Player 2 uses 'O' (Red).<br>
+- Players take turns entering positions (0 to 8) on the Tic-Tac-Toe grid.<br>
+- The game checks for a winner after every turn.<br>
+- Sounds are played when a player makes a move or when the game ends.<br>
+
+## Code
+
+```python
+import time
+from colorama import Fore, Style
+import pygame
+pygame.mixer.init()
+
+def draw_board(xstate, ystate):
+    zero = f'{Fore.GREEN}X{Fore.RESET}' if xstate[0] else f'{Fore.RED}O{Fore.RESET}' if ystate[0] else 0
+    one = f'{Fore.GREEN}X{Fore.RESET}' if xstate[1] else f'{Fore.RED}O{Fore.RESET}' if ystate[1] else 1
+    two = f'{Fore.GREEN}X{Fore.RESET}' if xstate[2] else f'{Fore.RED}O{Fore.RESET}' if ystate[2] else 2
+    three = f'{Fore.GREEN}X{Fore.RESET}' if xstate[3] else f'{Fore.RED}O{Fore.RESET}' if ystate[3] else 3
+    four = f'{Fore.GREEN}X{Fore.RESET}' if xstate[4] else f'{Fore.RED}O{Fore.RESET}' if ystate[4] else 4
+    five = f'{Fore.GREEN}X{Fore.RESET}' if xstate[5] else f'{Fore.RED}O{Fore.RESET}' if ystate[5] else 5
+    six = f'{Fore.GREEN}X{Fore.RESET}' if xstate[6] else f'{Fore.RED}O{Fore.RESET}' if ystate[6] else 6
+    seven = f'{Fore.GREEN}X{Fore.RESET}' if xstate[7] else f'{Fore.RED}O{Fore.RESET}' if ystate[7] else 7
+    eight = f'{Fore.GREEN}X{Fore.RESET}' if xstate[8] else f'{Fore.RED}O{Fore.RESET}' if ystate[8] else 8
+
+    print(f"  {zero}  |  {one}  |  {two}  |")
+    print(f"------------------")
+    print(f"  {three}  |  {four}  |  {five}  |")
+    print(f"------------------")
+    print(f"  {six}  |  {seven}  |  {eight}  |")
+
+def checkwin(xstate, ystate):
+    win = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
+    for a, b, c in win:
+        if(xstate[a] == xstate[b] == xstate[c] and xstate[a] != 0):
+            return 1
+        elif(ystate[a] == ystate[b] == ystate[c] and ystate[a] != 0):
+            return -1
+    return 0
+
+print("Welcome to tic tac toe")
+xstate = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+ystate = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+turn = 1
+
+while True:
+    draw_board(xstate, ystate)
+    if turn == 1:
+        inp = int(input("Input no for X:\n"))
+        pygame.mixer.Sound("click.wav").play()
+        xstate[inp] = 1
+    else:
+        inp = int(input("Input no for O:\n"))
+        ystate[inp] = 1
+        pygame.mixer.Sound("click.wav").play()
+    turn = 1 - turn
+    wincheck = checkwin(xstate, ystate)
+    if(wincheck == 1):
+        draw_board(xstate, ystate)
+        print(f"\n{Fore.GREEN}X wins!!!!!!!{Fore.RESET}\n")
+        sound = pygame.mixer.Sound("gameover.wav")
+        sound.play()
+        time.sleep(2)
+        break
+    elif(wincheck == -1):
+        draw_board(xstate, ystate)
+        print(f"\n{Fore.RED}O wins!!!!!!!{Fore.RESET}\n")
+        sound = pygame.mixer.Sound("gameover.wav")
+        sound.play()
+        time.sleep(2)
+        break
+```
+<br>
+## Features<br>
+- Two-player game: Player 1 is X (Green) and Player 2 is O (Red).<br>
+- Win conditions are checked after every move.<br>
+- Sound effects for moves and game over.<br>
+- Colorful output in the terminal.<br>
+
+## How to Run
+1. Install `pygame` and `colorama` using pip:<br>
+```bash
+   pip install pygame colorama
+```
+## Run the script:<br>
+python tictactoe.py
+<br>

@@ -399,7 +399,6 @@ while True:
         time.sleep(2)
         break
 ```
-<br>
 ## Features:<br>
 - Two-player game: Player 1 is X (Green) and Player 2 is O (Red).<br>
 - Win conditions are checked after every move.<br>

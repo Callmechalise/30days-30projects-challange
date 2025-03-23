@@ -400,7 +400,7 @@ while True:
         break
 ```
 <br>
-## Features<br>
+ **Features**<br>
 - Two-player game: Player 1 is X (Green) and Player 2 is O (Red).<br>
 - Win conditions are checked after every move.<br>
 - Sound effects for moves and game over.<br>

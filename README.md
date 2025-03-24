@@ -74,7 +74,7 @@ python calculator.py
 
 **Day1**
 
-![Day1:](Day1.png)
+![Day1:](Screenshot/Day1.png)
 
 
  

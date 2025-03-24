@@ -416,7 +416,7 @@ python tictactoe.py
 ```
 <br>
 
-#Day 8<br>
+# Day 8<br>
 # Number Guessing Game<br>
 
 ## Description
@@ -454,5 +454,5 @@ Ensure you have the following sound files in the same directory as the script:
 - `veryclose.wav` (Played when extremely close)
 
 ## License
-This project is free to use and modify.
+This whole project is free to use and modify.
 

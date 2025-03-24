@@ -415,3 +415,44 @@ while True:
 python tictactoe.py
 ```
 <br>
+
+#Day 8<br>
+# Number Guessing Game<br>
+
+## Description
+A fun number guessing game where players try to guess a randomly chosen number within the range of **1 to 1,000,000**. The game provides hints based on how close the guess is to the actual number. Additionally, sound effects are played for correct and near-correct guesses.
+
+## Features
+- Randomly selects a number within a dynamic range.
+- Provides hints based on the guessed number's proximity.
+- Uses **pygame** to play sound effects for correct and close guesses.
+- Handles invalid inputs to ensure smooth gameplay.
+
+## Requirements
+Make sure you have **Python 3** installed, along with the required dependencies:
+
+```sh
+pip install pygame
+```
+
+## How to Play
+1. Run the script:
+   ```sh
+   python number_guess.py
+   ```
+2. Enter a number within **1 - 1,000,000** when prompted.
+3. Receive hints based on your guess:
+   - "Way too high" or "Way too low" for distant guesses.
+   - "Very close! Just a bit high/low." for near-correct guesses.
+   - "🎉 Congratulations!" when the correct number is guessed.
+4. Enjoy the game with sound effects!
+
+## Sound Effects
+Ensure you have the following sound files in the same directory as the script:
+- `rightguess.wav` (Played on correct guess)
+- `close.wav` (Played when very close)
+- `veryclose.wav` (Played when extremely close)
+
+## License
+This project is free to use and modify.
+

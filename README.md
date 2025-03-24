@@ -175,7 +175,7 @@ pip install customtkinter
 
 ---
 
-![Day3:](Day3.png)
+![Day3:](Screenshot/Day3.png)
 
 # 🌦️ Weather Data Fetcher (Day 4/30)
 
@@ -311,7 +311,7 @@ def play_alarm():
 ```
 <br>
 
-![Day6:](Day6.png)
+![Day6:](Screenshot/Day6.png)
 
 <br>
 

@@ -453,6 +453,40 @@ Ensure you have the following sound files in the same directory as the script:
 - `close.wav` (Played when very close)
 - `veryclose.wav` (Played when extremely close)
 
+# Day 9<br>
+# Dictionary App
+
+A simple Python-based dictionary application using `Tkinter` and `requests`. This app allows you to search for words and view their meanings with part of speech and example sentences (if available).
+
+---
+
+## Features
+
+- **Word Search**: Search for any word to get its meaning.
+- **Definitions**: View the part of speech, definition(s), and example sentences.
+- **Error Handling**: Displays an error message if the word is not found.
+
+---
+
+## Libraries Used
+
+- **Tkinter**: Standard Python library for GUI applications.
+- **customtkinter**: Custom version of Tkinter to provide enhanced aesthetics.
+- **requests**: For making HTTP requests to the dictionary API.
+
+---
+
+## Installation
+
+### 1. Clone the Repository
+
+Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/yourusername/dictionary-app.git
+```
+
+
 ## License
 This whole project is free to use and modify.
 

@@ -3,7 +3,6 @@ import requests
 import customtkinter
 from tkinter import END
 
-
 def search():
     try:
         word=entryfield.get()
@@ -19,11 +18,13 @@ def search():
             output.append(f"Definition: {definition['definition']}")
             if 'example' in definition:
                 output.append(f"Example: {definition['example']}\n")
+        text_box.config(state='normal')
         text_box.delete(1.0,END)
         text_box.insert(tk.END, '\n'.join(output))
     except:
+        text_box.config(state='normal')
         text_box.delete(1.0,END)
-        text_box.insert(tk.END, 'Oops Error')
+        text_box.insert(tk.END, 'Oops!!!!\nCant find anything about that')
 
 win=tk.Tk()
 win.title("DICTIONARY")
@@ -40,6 +41,6 @@ bsearch.grid(row=0,column=4,pady=5)
 
 text_box = tk.Text(win, height=12, width=45,bg='lightyellow')
 text_box.grid(row=2, column=0, columnspan=4, pady=10, padx=10)
-
+text_box.config(state='disabled')
 
 win.mainloop()

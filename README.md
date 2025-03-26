@@ -490,3 +490,65 @@ git clone https://github.com/yourusername/dictionary-app.git
 ## License
 This whole project is free to use and modify.
 
+## Day 10<br>
+# Rock Paper Scissors Game
+
+This is a simple **Rock Paper Scissors** game built using **Python** and **Tkinter** for the graphical user interface. It also utilizes **Pygame** for sound effects and **PIL** for image processing.
+
+## Features
+- Graphical UI using **Tkinter**
+- Rock, Paper, Scissors selection buttons
+- Random choice selection for the computer
+- Score tracking for both user and computer
+- Sound effects for win and lose scenarios
+- Uses images for a better visual representation
+
+## Installation & Requirements
+### Prerequisites:
+Ensure you have Python installed on your system. You also need the following libraries:
+- **tkinter** (built-in with Python)
+- **customtkinter**
+- **pygame**
+- **Pillow**
+
+### Install dependencies:
+Run the following command to install required libraries:
+```bash
+pip install customtkinter pygame pillow
+```
+
+## How to Run
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/repository-name.git
+```
+2. Navigate to the project directory:
+```bash
+cd repository-name
+```
+3. Run the script:
+```bash
+python main.py
+```
+
+## Game Rules
+- **Rock beats Scissors**
+- **Scissors beat Paper**
+- **Paper beats Rock**
+- The game declares a winner and updates the score accordingly.
+
+## File Structure
+- `main.py` → Main Python script for running the game
+- `rock.png`, `scissors.png`, `papers.png` → Image assets
+- `win.wav`, `gameover.wav` → Sound effects
+
+## Screenshots
+*(You can add screenshots here to showcase the game UI)*
+
+## License
+This project is open-source and available under the MIT License.
+
+## Author
+[Pabitra-Me myself](https://github.com/yourusername)
+![Day10:](Screenshot/Day10.png)
+

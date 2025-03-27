@@ -552,3 +552,76 @@ This project is open-source and available under the MIT License.
 [Pabitra-Me myself](https://github.com/CallmeChalise)
 ![Day10:](Screenshot/Day10.png)
 
+# Day 11-Equation Solver
+
+## Overview
+This Python program is an interactive equation solver that can handle various types of equations, including:
+
+- Quadratic equations (ax^2 + bx + c = 0)
+- Cubic equations (ax^3 + bx^2 + cx + d = 0)
+- Simple linear equations (e.g., 3x + 2 = 8)
+- Simultaneous equations with two variables
+
+The program provides a menu-driven interface where users can select the type of equation they want to solve and input the necessary coefficients.
+
+## Features
+- **Quadratic Equation Solver:** Determines real or imaginary roots using the quadratic formula.
+- **Cubic Equation Solver:** Finds real roots using NumPy's `roots` function.
+- **Linear Equation Solver:** Solves simple linear equations using SymPy.
+- **Simultaneous Equation Solver:** Uses Z3 solver to find solutions for two-variable equations.
+- **Caching:** Utilizes `lru_cache` to store previously computed results for efficiency.
+
+## Requirements
+To run this program, you need to install the following dependencies:
+
+```sh
+pip install numpy sympy z3-solver
+```
+
+## How to Use
+Run the program by executing:
+
+```sh
+python equation_solver.py
+```
+
+You will be prompted to select an operation:
+
+1. Quadratic equation
+2. Simple linear equation
+3. Cubic equation
+4. Simultaneous equations
+
+Follow the prompts to enter coefficients or equations, and the program will display the solutions.
+
+## Example Usage
+### Quadratic Equation
+```
+Enter a,b,c "ax^2+bx+c"
+a: 1
+b: -3
+c: 2
+Real roots
+x1=2
+x2=1
+```
+
+### Simultaneous Equations
+```
+Enter first equation:
+2*x + 3*y = 8
+Enter second equation:
+4*x - y = 2
+X: 2
+Y: 1
+```
+
+## Notes
+- The quadratic equation solver supports complex roots.
+- The cubic solver rounds the roots to the nearest integer.
+- The simultaneous equation solver expects equations in `ax + by = c` format.
+
+## License
+This project is open-source and free to use under the MIT License.
+
+

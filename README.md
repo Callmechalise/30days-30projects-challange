@@ -624,4 +624,88 @@ Y: 1
 ## License
 This project is open-source and free to use under the MIT License.
 
+## Day 12<br>
+```markdown
+# Text-to-Speech (TTS) Using Windows SAPI  
+
+## 📌 Description  
+This is a simple **Text-to-Speech (TTS)** program that uses **Windows Speech API (SAPI)** via `win32com.client`.  
+It converts user-inputted text into speech using the default system voice.  
+
+## 🛠️ Requirements  
+- Windows OS  
+- Python (3.x)  
+- `pywin32` module  
+
+## 🔧 Installation  
+
+### 1️⃣ Install Python (if not already installed)  
+Download Python from [official website](https://www.python.org/downloads/) and install it.  
+
+### 2️⃣ Install `pywin32` (Windows API for Python)  
+Run the following command in the terminal or command prompt:  
+
+```sh
+pip install pywin32
+```
+
+## 🚀 Usage  
+1. Run the script:  
+   ```sh
+   python tts.py
+   ```
+2. Enter the text you want to convert to speech.  
+3. Press `q` to quit.  
+
+## 📝 Code Explanation  
+```python
+import win32com.client
+
+def speak(text):
+    speaker = win32com.client.Dispatch("SAPI.SpVoice")  # Initialize SAPI voice
+    speaker.Voice = speaker.GetVoices().Item(0)  # Select the default voice
+    speaker.Speak(text)  # Speak the text
+
+run = True
+while run:
+    x = input("Enter text, press q to quit:\n")  # Get user input
+    if x.lower() == "q":  # Check for exit condition
+        run = False
+        break
+    speak(x)  # Speak the entered text
+```
+
+## 🎯 Features  
+✅ Uses Windows built-in **Speech API (SAPI)**  
+✅ No external dependencies except `pywin32`  
+✅ Simple interactive loop for user input  
+
+## 🔄 Customization  
+- **Change the Voice:**  
+  Modify this line to select a different voice:  
+  ```python
+  speaker.Voice = speaker.GetVoices().Item(0)  # Change 0 to another index
+  ```
+  To list available voices, add:
+  ```python
+  for index, voice in enumerate(speaker.GetVoices()):
+      print(f"Voice {index}: {voice.GetAttribute('Name')}")
+  ```
+
+## 🛑 Troubleshooting  
+1. **ModuleNotFoundError: No module named 'win32com'**  
+   - Run `pip install pywin32`  
+   - Restart the terminal or command prompt  
+
+2. **No Sound Output**  
+   - Check if your system has TTS voices installed  
+   - Try changing the voice index  
+
+---
+
+**👨‍💻 Developed with ❤️ by [Pabitra]**
+```
+
+
+
 

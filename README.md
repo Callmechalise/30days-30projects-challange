@@ -652,7 +652,7 @@ pip install pywin32
 ## 🚀 Usage  
 1. Run the script:  
    ```sh
-   python tts.py
+   python Day12.py
    ```
 2. Enter the text you want to convert to speech.  
 3. Press `q` to quit.  

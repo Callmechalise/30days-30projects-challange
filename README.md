@@ -753,9 +753,9 @@ pip install pygame colorama
 
 ## How to Play
 
-1. Run the `hangman.py` script:
+1. Run the `Day13.py` script:
     ```bash
-    python hangman.py
+    python Day13.py
     ```
 
 2. The game will display a series of dashes (`-`) representing the letters of a randomly selected word.

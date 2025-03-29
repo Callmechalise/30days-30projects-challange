@@ -1,0 +1,34 @@
+apple, banana, cherry, mango, grape, watermelon, pineapple, strawberry, blueberry, raspberry, kiwi, papaya, peach, plum, pear, orange, lemon, lime, coconut, avocado, fig, pomegranate, guava, date, melon, lychee, apricot, passionfruit, blackberry, dragonfruit, jackfruit, olive, starfruit, cranberry, mulberry, nectarine
+
+pizza, burger, sandwich, pasta, noodles, soup, rice, bread, pancake, omelette, sausage, cheese, butter, milk, yogurt, icecream, chocolate, candy, cake, biscuit, cookie, popcorn, chips, salad, steak, bacon, coffee, tea, juice, soda, sushi, taco, burrito, kebab, shawarma, dumpling, curry, lasagna, risotto, tofu, nachos, ramen, falafel, pudding, croissant, waffle, muffin
+
+dog, cat, elephant, tiger, lion, bear, zebra, giraffe, monkey, kangaroo, rabbit, horse, donkey, fox, wolf, cheetah, panther, deer, buffalo, rhinoceros, hippopotamus, squirrel, rat, mouse, dolphin, whale, shark, penguin, eagle, owl, parrot, crow, peacock, snake, cobra, alligator, lizard, turtle, frog, chameleon, octopus, jellyfish, seahorse, lobster, crab
+
+football, basketball, volleyball, tennis, cricket, baseball, hockey, badminton, tabletennis, chess, carrom, billiards, rugby, golf, archery, boxing, wrestling, judo, karate, taekwondo, fencing, cycling, skating, skiing, snowboarding, bowling, darts, frisbee, handball, rowing, canoeing, surfing, kayaking, scuba, fishing, gymnastics, motorsport, marathon, climbing, parkour
+
+kathmandu, delhi, newyork, london, paris, tokyo, sydney, rome, berlin, beijing, moscow, madrid, dubai, toronto, losangeles, chicago, bangkok, seoul, amsterdam, barcelona, hongkong, singapore, mumbai, istanbul, vienna, athens, venice, copenhagen, zurich, buenosaires, stockholm, prague, cairo, lisbon, oslo, budapest, jakarta, manila, doha, melbourne, brussels, bangalore, hanoi, dhaka, shanghai
+
+computer, laptop, keyboard, mouse, monitor, printer, speaker, microphone, camera, smartphone, tablet, charger, battery, headphone, earphone, joystick, projector, router, modem, smartwatch, usb, cable, television, fridge, washingmachine, airconditioner, fan, light, switch, remote, drone, robot, engine, motor, gearbox, tire, suspension, piston, clutch, screwdriver, hammer, wrench, drill
+
+ocean, river, mountain, valley, hill, desert, lake, pond, waterfall, beach, island, volcano, canyon, cave, jungle, forest, grassland, field, cliff, bay, reef, glacier, tundra, cave, lagoon, swamp, meadow, savanna, moor, prairie, rainforest, archipelago, delta, fjord, plateau, geyser, estuary, coast, ridge, peak
+
+doctor, engineer, scientist, teacher, farmer, mechanic, pilot, astronaut, artist, musician, dancer, actor, director, lawyer, judge, soldier, police, firefighter, journalist, chef, architect, writer, poet, philosopher, banker, businessman, investor, psychologist, counselor, nurse, technician, electrician, plumber, carpenter, blacksmith, fisherman, hunter, driver, sailor, priest, monk
+
+violin, guitar, piano, drum, trumpet, flute, harmonica, saxophone, cello, clarinet, tuba, harp, accordion, bass, banjo, xylophone, synthesizer, ukulele, sitar, bagpipe, tambourine, maracas, gong, djembe, tabla, bongo, recorder, kazoo, lute, zither, lyre, oboe, conga, didgeridoo, fiddle, hurdygurdy, mandolin
+
+red, blue, green, yellow, purple, orange, pink, brown, black, white, grey, cyan, magenta, violet, indigo, turquoise, olive, maroon, beige, coral, gold, silver, bronze, ivory, lavender, mint, peach, teal, navy, mustard, ochre
+
+monday, tuesday, wednesday, thursday, friday, saturday, sunday, january, february, march, april, may, june, july, august, september, october, november, december, morning, noon, afternoon, evening, midnight, sunrise, sunset
+
+earth, moon, sun, star, planet, galaxy, universe, comet, meteor, asteroid, nebula, blackhole, satellite, orbit, eclipse, space, astronaut, spaceship, rocket, telescope, mars, venus, jupiter, saturn, uranus, neptune, pluto, asteroidbelt, milkyway, constellations, aliens, spacetime, gravity, cosmos
+
+circle, square, triangle, rectangle, oval, pentagon, hexagon, octagon, diamond, rhombus, trapezium, parallelogram, cube, sphere, cone, cylinder, pyramid, torus, prism, hemisphere
+
+table, chair, bed, sofa, cupboard, wardrobe, mirror, lamp, clock, calendar, bookshelf, curtain, rug, carpet, pillow, blanket, mattress, bathtub, shower, sink, faucet, toilet, broom, mop, vacuum, washingmachine, dishwasher, microwave, refrigerator, oven, stove, blender, kettle, toaster, pan, pot, plate, bowl, spoon, fork, knife, napkin, tissue
+
+airport, station, harbor, bridge, tunnel, highway, road, street, alley, avenue, boulevard, lane, footpath, crossing, junction, overpass, underpass, roundabout, trafficlight, signpost, sidewalk
+
+happy, sad, angry, excited, nervous, tired, bored, scared, surprised, embarrassed, proud, confused, relaxed, jealous, hopeful, grateful, annoyed, worried, confident, frustrated, friendly, shy, lazy, energetic, cheerful, lonely, curious, patient, kind, rude
+
+run, walk, jump, sit, stand, sleep, eat, drink, talk, listen, write, read, think, dream, laugh, cry, shout, whisper, dance, sing, play, swim, climb, fall, fly, crawl, skip, jog, shake, wave, hug, kiss, kick, punch, throw, catch, pull, push
+

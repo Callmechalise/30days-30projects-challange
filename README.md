@@ -705,8 +705,6 @@ while run:
 
 **👨‍💻 Developed with ❤️ by [Pabitra]**
 
-Here’s a `README.md` file for your Hangman game:
-
 ---
 
 # Day 13-Hangman Game

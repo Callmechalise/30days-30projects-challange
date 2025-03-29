@@ -736,7 +736,7 @@ pip install pygame colorama
 
 ## Setup
 
-1. Clone or download the repository containing the `hangman.py` script and place it in a folder.
+1. Clone or download the repository containing the `Day13.py` script and place it in a folder.
 2. Create a `words.txt` file in the same folder, and add a comma-separated list of words (without spaces) for the game to use. For example:
 
     ```txt

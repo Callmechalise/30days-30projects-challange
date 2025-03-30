@@ -804,5 +804,73 @@ This project is open-source and free to use. Feel free to modify and share the c
 This `README` provides clear instructions for setting up and playing the game, along with the necessary dependencies and assets. Let me know if you need any additional details!
 
 
+# Day 14-PDF Merger
+
+A simple Python script to merge multiple PDF files into a single PDF using `PyPDF2` and `tkinter` for file selection.
+
+## Features
+- Select multiple PDF files via a graphical file dialog
+- Merge selected PDFs into a single file
+- Automatic script termination after merging
+
+## Requirements
+Ensure you have Python installed (Python 3 recommended). Install the required dependencies using:
+```sh
+pip install pypdf2
+```
+
+## Usage
+Run the script with:
+```sh
+python Day14.py
+```
+
+### Steps:
+1. A file selection dialog will open.
+2. Select the PDFs you want to merge.
+3. Click 'Open' to confirm your selection.
+4. The merged PDF (`Merged.pdf`) will be created in the same directory as the script.
+5. The script will exit automatically after merging.
+
+## Code Overview
+```python
+from PyPDF2 import PdfWriter
+import tkinter as tk
+from tkinter import filedialog
+import sys
+
+def select_file():
+    filepaths = filedialog.askopenfilenames(title="Select PDF Files")
+    return list(filepaths)
+
+root = tk.Tk()
+root.withdraw()
+
+pdfs = select_file()
+if not pdfs:
+    print("No files selected. Exiting.")
+    sys.exit()
+
+merger = PdfWriter()
+for pdf in pdfs:
+    merger.append(pdf)
+
+merger.write("Merged.pdf")
+merger.close()
+
+print("✅ PDFs merged successfully into 'Merged.pdf'. Exiting...")
+sys.exit()
+```
+
+## License
+This project is open-source and available under the MIT License.
+
+## Contributing
+Feel free to submit pull requests or open issues for improvements!
+
+## Author
+[Pabitra]
+
+
 
 

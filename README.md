@@ -871,6 +871,75 @@ Feel free to submit pull requests or open issues for improvements!
 ## Author
 [Pabitra]
 
+# Day15-QR Code Generator
+
+This is a simple QR Code Generator built using Python, `qrcode`, and `customtkinter`. It allows users to enter a URL or text, generate a QR code, and display it instantly.
+
+## Features
+
+- Generates QR codes from any text or URL input.
+- Uses `customtkinter` for a modern GUI.
+- Saves the generated QR code as `Qrcode.png`.
+- Displays the QR code immediately after generation.
+- Simple and lightweight design.
+
+## Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/qr-code-generator.git
+cd qr-code-generator
+```
+
+### 2. Install Dependencies
+
+Make sure you have Python installed, then run:
+
+```bash
+pip install qrcode[pil] customtkinter
+```
+
+## Usage
+
+Run the script using:
+
+```bash
+python Day15.py
+```
+
+### Steps:
+
+1. Enter the text or link in the input box.
+2. Click the **Generate** button.
+3. The QR code will be generated, saved as `Qrcode.png`, and displayed.
+
+## Dependencies
+
+- `qrcode`: For generating QR codes.
+- `customtkinter`: For a modern graphical user interface.
+
+## Screenshots
+
+
+
+## License
+
+This project is licensed under the MIT License. Feel free to use and modify it!
+
+## Contributing
+
+Feel free to fork this repository and submit pull requests. Any improvements and suggestions are welcome!
+
+## Author
+
+Created by **Pabitra**.
+
+---
+
+Happy Coding! 🚀
+
+
 
 
 

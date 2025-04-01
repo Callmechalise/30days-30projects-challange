@@ -941,5 +941,57 @@ Happy Coding! 🚀
 
 ![Day15:](Screenshot/Day15.png)
 
+# Day-16 Music Player
+
+A simple music player built using Tkinter and Pygame that allows users to load and play MP3 files from a selected folder.
+
+## Features
+- Load MP3 files from a selected folder
+- Play, pause, and resume music
+- Navigate to the next and previous songs
+- Graphical user interface using Tkinter
+
+## Requirements
+Make sure you have the following dependencies installed:
+- Python 3.x
+- Tkinter (comes pre-installed with Python)
+- Pygame
+
+## Installation
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/yourusername/music-player.git
+   cd music-player
+   ```
+2. Install dependencies:
+   ```sh
+   pip install pygame
+   ```
+3. Run the script:
+   ```sh
+   python music_player.py
+   ```
+
+## Usage
+1. Click on **Organize > Select Folder** to load MP3 files.
+2. Use the buttons to play, pause, go to the next song, or go back to the previous song.
+
+## File Structure
+```
+├── music_player.py  # Main Python script
+├── play.png         # Play button image
+├── pause.png        # Pause button image
+├── next.png         # Next button image
+├── previous.png     # Previous button image
+└── README.md        # This file
+```
+
+## License
+This project is open-source and available under the MIT License.
+
+## Author
+[Pabitra chalisep40](https://github.com/yourusername)
+
+
 
 

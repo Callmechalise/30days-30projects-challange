@@ -9,3 +9,4 @@ import warnings
 warnings.filterwarnings('ignore')
 import nltk
 
+#Tried learning but lacked alot of topics will learn soon

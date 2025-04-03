@@ -1,7 +1,5 @@
 import tkinter as tk
-from tkinter.filedialog import askopenfilename,asksaveasfilename
-from tkinter import END
-
+from tkinter import filedialog, END
 
 
 def openf():

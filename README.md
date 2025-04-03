@@ -1003,7 +1003,7 @@ This project is open-source and available under the MIT License.
 
 A lightweight Notepad application built with Python and Tkinter, featuring file open/save functionality with a clean interface.
 
-![Notepad Screenshot](screenshot.png) *(Replace with actual screenshot)*
+![Day18:](Screenshot/Day18.png)
 
 ## Features ✨
 
@@ -1049,5 +1049,5 @@ Pull requests are welcome! For major changes, please open an issue first.
 
 *Created with ❤️ using Python and Tkinter*
 
-![Day18:](Screenshot/Day18.png)
+
 

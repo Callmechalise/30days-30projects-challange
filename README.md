@@ -995,7 +995,7 @@ This project is open-source and available under the MIT License.
 ![Day16:](Screenshot/Day16.png)
 
 
-```markdown
+
 # Simple Notepad Application
 
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
@@ -1049,5 +1049,5 @@ Pull requests are welcome! For major changes, please open an issue first.
 
 *Created with ❤️ using Python and Tkinter*
 
-![Day17:](Screenshot/Day17.png)
+![Day18:](Screenshot/Day18.png)
 

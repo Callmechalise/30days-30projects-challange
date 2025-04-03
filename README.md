@@ -995,3 +995,59 @@ This project is open-source and available under the MIT License.
 ![Day16:](Screenshot/Day16.png)
 
 
+```markdown
+# Simple Notepad Application
+
+![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
+![Tkinter](https://img.shields.io/badge/GUI-Tkinter-green)
+
+A lightweight Notepad application built with Python and Tkinter, featuring file open/save functionality with a clean interface.
+
+![Notepad Screenshot](screenshot.png) *(Replace with actual screenshot)*
+
+## Features ✨
+
+- 📂 **File Operations**: Open and save text files (`.txt` or any format)
+- 📝 **Clean GUI**: Responsive layout with resizable text area
+- 🖱️ **User-Friendly**: File type filters and clear error handling
+- 🏷️ **Dynamic Title**: Shows current filename in window title
+
+## Installation ⚙️
+
+1. **Prerequisites**:
+   - Python 3.7 or higher
+
+2. **Run the application**:
+   ```bash
+   git clone https://github.com/yourusername/notepad-app.git
+   cd notepad-app
+   python notepad.py
+   ```
+
+## Usage 🖥️
+
+- **Open Files**: Click "Open" to load any text file
+- **Save Files**: Use "Save As" to save your work
+- **Text Editing**: Standard text editing with copy/paste support (Ctrl+C/Ctrl+V)
+
+## Customization 🎨
+
+Easily modify the code to add:
+- Dark mode (update colors in `tk.Text`)
+- Keyboard shortcuts (add `win.bind()`)
+- Line numbers (custom `Canvas` implementation)
+
+## Contributing 🤝
+
+Pull requests are welcome! For major changes, please open an issue first.
+
+## License 📄
+
+[MIT](LICENSE)
+
+---
+
+*Created with ❤️ using Python and Tkinter*
+
+![Day17:](Screenshot/Day17.png)
+

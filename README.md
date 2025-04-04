@@ -1050,4 +1050,90 @@ Pull requests are welcome! For major changes, please open an issue first.
 *Created with ❤️ using Python and Tkinter*
 
 
+# 📸 Image Resizer Tool(Day19)
+**By Pabitra** | 🛠️ Built with Python + Pillow  
+
+A simple GUI tool to resize images (PNG/JPG/JPEG) while maintaining aspect ratio. Perfect for quick bulk resizing!  
+
+---
+
+## 🚀 Features  
+- **GUI file picker** (no manual path typing!)  
+- **Custom width/height** input  
+- **Preserves original format** (`.png`, `.jpg`, `.jpeg`)  
+- **Instant preview** of resized image  
+
+---
+
+## ⚙️ Installation  
+1. Install Python 3.x  
+2. Install dependencies:  
+```bash
+pip install pillow tk
+```
+
+---
+
+## 👨‍💻 Usage  
+Run the script:  
+```python
+import os.path
+from PIL import Image
+from tkinter.filedialog import askopenfilename
+
+# Select image
+path = askopenfilename(filetypes=[('PNG Files', '*.png'), ('JPG Files', '*.jpg'), ('All Files', '*.*')])
+img = Image.open(path)
+
+# Input new dimensions
+print("Input size")
+width = int(input("Enter width:--> "))
+height = int(input("Enter height:--> "))
+size = (width, height)
+
+# Resize and save
+if path.lower().endswith(('.png', '.jpg', '.jpeg')):
+    filename, extension = os.path.splitext(path)
+    resized_image = img.resize(size)
+    resized_image.save(f"resized{extension}")
+    resized_image.show()  # Preview
+```
+
+---
+
+## 🧠 How It Works  
+1. **`askopenfilename()`**: Opens a file dialog to pick an image.  
+2. **`Pillow`**: Handles image resizing with `Image.resize()`.  
+3. **Dynamic Saving**: Keeps the original file extension (e.g., `resized.jpg`).  
+
+---
+
+## 🌟 Pro Tip  
+Add this to resize **multiple images** in a folder:  
+```python
+from pathlib import Path
+
+for img_path in Path("your_folder").glob("*.*"):
+    if img_path.suffix.lower() in ('.png', '.jpg', '.jpeg'):
+        img = Image.open(img_path)
+        img.thumbnail((800, 800))  # Max 800x800, keeps aspect ratio
+        img.save(f"resized_{img_path.name}")
+```
+
+---
+
+## 📜 License  
+MIT © Pabitra  
+
+**Star ⭐ if you find this useful!**  
+
+--- 
+
+### 🔧 Dependencies  
+- Python 3.x  
+- `Pillow` (`pip install pillow`)  
+- `Tkinter` (built-in with Python)  
+
+---
+
 

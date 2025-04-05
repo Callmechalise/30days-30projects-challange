@@ -1,5 +1,5 @@
 import requests
-API_KEY="d472103da2ab74d7511e6d60"
+API_KEY="Yourapi"
 x=input("Enter currency to be converted:\n").strip().upper()
 y=input("Enter the currency to convert in:\n").strip().upper()
 url=f"https://v6.exchangerate-api.com/v6/{API_KEY}/pair/{x}/{y}"

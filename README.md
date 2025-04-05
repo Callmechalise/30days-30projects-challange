@@ -1136,4 +1136,50 @@ MIT © Pabitra
 
 ---
 
+### Currency Converter(Day-20)
 
+A simple Python script that converts currencies using the ExchangeRate-API.
+
+## Features
+
+- Real-time currency conversion
+- Supports all major currencies
+- Simple command-line interface
+- Error handling for API responses
+
+## Requirements
+
+- Python 3.x
+- `requests` library (install with `pip install requests`)
+
+## Usage
+
+1. Replace `"Yourapi"` in the script with your actual ExchangeRate-API key
+2. Run the script with `python Day20.py`
+3. Enter:
+   - The currency to convert from (e.g., USD)
+   - The currency to convert to (e.g., EUR)
+   - The amount you want to convert
+
+## Example
+
+```
+Enter currency to be converted:
+USD
+Enter the currency to convert in:
+EUR
+1 USD = 0.85 EUR
+Enter amount:
+100
+Amount in EUR:85.00
+```
+
+## API Note
+
+You'll need to get a free API key from [ExchangeRate-API](https://www.exchangerate-api.com/).
+
+## Author
+
+Created by Pabitra
+
+---

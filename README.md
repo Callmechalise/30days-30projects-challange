@@ -1183,3 +1183,61 @@ You'll need to get a free API key from [ExchangeRate-API](https://www.exchangera
 Created by Pabitra
 
 ---
+
+# Voice Assistant - Personal AI Assistant  (Day21)
+
+A simple **voice-controlled assistant** built with Python that responds to voice commands, opens websites, and greets you based on the time of day.  
+
+![Python](https://img.shields.io/badge/Python-3.7%2B-blue)  
+![SpeechRecognition](https://img.shields.io/badge/Library-SpeechRecognition-green)  
+![Windows](https://img.shields.io/badge/Platform-Windows-lightgrey)  
+
+## 🎤 Features  
+- **Voice Interaction**: Responds to spoken commands.  
+- **Smart Greeting**: Says "Good morning/afternoon/evening" based on time.  
+- **Web Automation**: Opens websites like YouTube, ChatGPT, Instagram, and GitHub.  
+- **Text-to-Speech**: Uses `SAPI.SpVoice` (Windows) for voice feedback.  
+
+## ⚙️ Installation  
+1. **Clone the repository**  
+   ```sh
+   git clone https://github.com/yourusername/voice-assistant.git
+   cd voice-assistant
+   ```  
+
+2. **Install dependencies**  
+   ```sh
+   pip install SpeechRecognition pywin32 webbrowser
+   ```  
+
+   *(For microphone access, ensure `pyaudio` is installed. If errors occur, try:)*  
+   ```sh
+   pip install pipwin
+   pipwin install pyaudio
+   ```  
+
+3. **Run the assistant**  
+   ```sh
+   python Day21.py
+   ```  
+
+## 🎙️ Available Commands  
+| Command | Action |  
+|---------|--------|  
+| **"Open YouTube"** | Opens YouTube |  
+| **"Open GPT"** | Opens ChatGPT |  
+| **"Open my website"** | Opens `pabitrachalise.com.np` |  
+| **"Open Insta"** | Opens Instagram |  
+| **"Open Git"** | Opens GitHub |  
+| **"Quit" / "Exit"** | Closes the program |  
+
+## 🛠️ Customization  
+- **Add more websites**: Modify `openweb()` in the code.  
+- **Change voice**: Adjust `SAPI.SpVoice` settings (Windows only).  
+- **Extend commands**: Add new `if-elif` conditions in `takecommand()`.  
+
+
+---
+**Note**: This project is optimized for **Windows** (due to `win32com`). For macOS/Linux, consider using `pyttsx3` instead.  
+
+

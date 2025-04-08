@@ -1329,5 +1329,5 @@ This project is under the [MIT License](LICENSE).
 ## ⭐ Show Some Love
 
 If you like this project, drop a ⭐ on GitHub!
-```
+
 

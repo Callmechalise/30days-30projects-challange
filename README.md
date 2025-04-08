@@ -27,7 +27,7 @@ This repository contains 30 Python projects that will help you enhance your prog
 | 19  | Image Resizer                 | PIL                                             |
 | 20  | Currency Converter            | requests                                        |
 | 21  | Voice Assistant               | speechrecognition, pyttsx3                     |
-| 22  | AI Chatbot (ChatGPT API)      | openai, requests                                |
+| 22  | AI Chatbot (ChatGPT API)      | gemini, requests                                |
 | 23  | Stock Market Analysis         | pandas, matplotlib, yfinance                   |
 | 24  | Expense Tracker with SQLite   | sqlite3, tkinter                               |
 | 25  | Web Automation (Form Filler)  | selenium                                        |
@@ -1239,5 +1239,95 @@ A simple **voice-controlled assistant** built with Python that responds to voice
 
 ---
 **Note**: This project is optimized for **Windows** (due to `win32com`). For macOS/Linux, consider using `pyttsx3` instead.  
+<br>
+### AI Voice Assistant with chatbot 🎙️(Day-23)
 
+This is a voice-activated AI assistant built using Python and Google's Gemini API. It listens to your voice, responds with natural speech, opens popular websites, and even answers your questions intelligently using AI.
+
+---
+
+## 🔥 Features
+
+- ⏰ **Time-based Greeting** (Good Morning, Afternoon, etc.)
+- 🗣️ **Speech Recognition** (Google Speech API)
+- 🔊 **Text-to-Speech** (Windows SAPI)
+- 🌐 **Voice-Controlled Web Browser**
+- 🤖 **Gemini AI Integration** (`gemini-2.0-flash`)
+- ⚡ **Cached AI Queries** using `functools.lru_cache`
+
+---
+
+## 📦 Requirements
+
+Make sure Python 3 is installed. Then install the required packages:
+
+```bash
+pip install google-generativeai speechrecognition pywin32
+```
+
+---
+
+## 🔐 Setup
+
+Replace this line with your actual API key from [Google AI Studio](https://makersuite.google.com/):
+
+```python
+genai.configure(api_key="YOUR_API_KEY_HERE")
+```
+
+---
+
+## ▶️ How to Use
+
+Run the script:
+
+```bash
+Day22.py
+```
+
+Then just speak:
+
+- `"Open YouTube"`
+- `"Open GPT"`
+- `"Open my website"`
+- `"Open Git"`
+- `"Quit"` — to exit
+
+---
+
+## 🧠 Code Structure
+
+- `wishme()` → Greets based on time
+- `takecommand()` → Listens and transcribes speech
+- `openweb()` → Opens websites via voice
+- `aiquery()` → Sends voice command to Gemini and speaks reply
+- `quit()` → Listens for quit command
+
+---
+
+## ⚠️ Notes
+
+- Windows only (due to `win32com.client`)
+- Requires internet and microphone access
+- AI responses are cached for efficiency
+
+---
+
+## 👤 Author
+
+**Pabitra Kumar Chalise**  
+🔗 [www.pabitrachalise.com.np](https://www.pabitrachalise.com.np)
+
+---
+
+## 📄 License
+
+This project is under the [MIT License](LICENSE).
+
+---
+
+## ⭐ Show Some Love
+
+If you like this project, drop a ⭐ on GitHub!
+```
 

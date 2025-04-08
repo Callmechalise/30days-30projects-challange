@@ -51,6 +51,12 @@ def takecommand():
             speak("Please say it again daddy")
     return query
 
+@functools.lru_cache()
+def aiquery(query):
+    response = model.generate_content(f"{query}")
+    speak(response.text)
+    return response.text
+
 def openweb():
     if "Open youtube".lower() in query.lower():
         webbrowser.open('https://www.youtube.com/')
@@ -71,6 +77,8 @@ def openweb():
         speak("Opening Git hub")
     elif "exit".lower() in query.lower():
         speak("Bye,Daddy")
+    else:
+        aiquery(query)
 def quit():
     while True:
             user_input = query.lower()
@@ -80,11 +88,7 @@ def quit():
                 sys.exit()
             # else:
             #     speak(f"You said: {user_input}")
-@functools.lru_cache()
-def aiquery(query):
-    response = model.generate_content(f"{query}")
-    speak(response.text)
-    return response.text
+
 if __name__ =="__main__":
     while True:
         wishme()
@@ -92,4 +96,4 @@ if __name__ =="__main__":
         speak(f"You said{query}")
         openweb()
         quit()
-        aiquery(query)
+#Changed a bit later as chatbot and commands would be triggered same time

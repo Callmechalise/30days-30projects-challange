@@ -6,7 +6,7 @@ import win32com.client
 from datetime import datetime
 import sys
 
-genai.configure(api_key="AIzaSyBROojpxVAS5fL_3_sfaZvYfGLkdNrQWxo")
+genai.configure(api_key="yourapi")
 model = genai.GenerativeModel('gemini-2.0-flash')
 
 def wishme():
